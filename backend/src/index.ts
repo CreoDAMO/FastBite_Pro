@@ -99,7 +99,7 @@ async function startServer() {
     await apolloServer.start();
     app.use('/graphql', expressMiddleware(apolloServer, {
       context: async ({ req }) => ({
-        user: (req as any).user,
+        user: req.user,
         dataSources: {
           // Add data sources here
         }
