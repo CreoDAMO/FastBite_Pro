@@ -1,0 +1,14 @@
+
+{
+  "name": "fastbite-pro",
+  "version": "1.0.0",
+  "description": "FastBite Pro - Ethical Food Delivery Platform",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && npm install && cd ../crowdfunding-app && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\" \"cd crowdfunding-app && npm run dev\"",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

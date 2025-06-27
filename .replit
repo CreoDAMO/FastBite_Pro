@@ -4,6 +4,8 @@ channel = "stable-24_05"
 
 [deployment]
 run = ["sh", "-c", "cd backend && npm install && npm run build && npm start"]
+
+run = "npm install && cd backend && npm install && npm run dev & cd ../frontend && npm install && npm run dev & cd ../crowdfunding-app && npm install && npm run dev & wait"
 deploymentTarget = "cloudrun"
 
 [[ports]]
