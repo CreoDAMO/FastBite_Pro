@@ -972,3 +972,267 @@ This wallet will:
 **Note**: Ensure this wallet is funded with testnet ETH for Base Sepolia deployments (use [Base Faucet](https://base.org/faucet)).
 
 ---
+# FastBite Pro - Ethical Food Delivery Platform
+
+FastBite Pro is a revolutionary food delivery platform that combines blockchain transparency, AI optimization, and ethical driver treatment to create the future of food logistics.
+
+## 🌟 Features
+
+- **Blockchain Verified Transactions**: Every order recorded on-chain for complete transparency
+- **Driver-First Ethics**: Guaranteed living wages and comprehensive benefits
+- **AI-Powered Optimization**: Orion AI maximizes efficiency while prioritizing driver earnings
+- **Instant Crypto Payouts**: Drivers receive earnings instantly in USDC
+- **Zero Delivery Fees**: Sustainable flat-rate subscription model for restaurants
+- **Smart Hubs**: Physical infrastructure supporting driver efficiency and well-being
+
+## 🏗️ Architecture
+
+### Frontend (Next.js 14 + React 19)
+- Modern React with TypeScript
+- Tailwind CSS 4.0 for styling
+- Apollo Client for GraphQL
+- Real-time WebSocket connections
+- Coinbase SDK integration
+
+### Backend (Node.js + Express)
+- Microservices architecture
+- GraphQL API with Apollo Server
+- MongoDB + PostgreSQL + Redis
+- WebSocket for real-time features
+- Comprehensive authentication & authorization
+
+### Blockchain Integration
+- Smart contracts on Base network
+- Coinbase AgentKit for payments
+- FBT token for loyalty and governance
+- DAO for driver council voting
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+ 
+- MongoDB
+- PostgreSQL
+- Redis
+- Git
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd fastbite-pro
+```
+
+2. **Install dependencies**
+```bash
+# Install dependencies for all services
+npm run setup
+```
+
+3. **Environment Setup**
+```bash
+# Copy environment template
+cp .env.example .env
+
+# Edit .env with your configuration
+nano .env
+```
+
+4. **Database Setup**
+```bash
+# Run database migrations
+npm run migrate
+```
+
+5. **Start Development Servers**
+```bash
+# Start all services in development mode
+npm run dev
+```
+
+This will start:
+- Frontend: http://0.0.0.0:3000
+- Backend API: http://0.0.0.0:4000
+- Crowdfunding App: http://0.0.0.0:3002
+
+## 📱 Services
+
+### Main Application (Port 3000)
+- Customer ordering interface
+- Driver dashboard
+- Merchant management
+- Admin panel
+- Compliance monitoring
+
+### Backend API (Port 4000)
+- GraphQL endpoint: `/graphql`
+- REST API: `/api/*`
+- WebSocket connection
+- Health check: `/health`
+
+### Crowdfunding App (Port 3002)
+- Investment platform
+- Supporter tiers
+- Progress tracking
+- Community features
+
+## 🛠️ Development
+
+### Available Scripts
+
+```bash
+# Setup all dependencies
+npm run setup
+
+# Start all services
+npm run dev
+
+# Run tests
+npm run test
+
+# Build for production
+npm run build
+
+# Deploy smart contracts
+npm run deploy-contracts
+
+# Run database migrations
+npm run migrate
+
+# Lint code
+npm run lint
+```
+
+### Project Structure
+
+```
+fastbite-pro/
+├── frontend/                 # Main React application
+│   ├── src/
+│   │   ├── app/             # Next.js app directory
+│   │   ├── components/      # React components
+│   │   └── utils/           # Utility functions
+├── backend/                 # Node.js API server
+│   ├── src/
+│   │   ├── routes/          # Express routes
+│   │   ├── models/          # Database models
+│   │   ├── services/        # Business logic
+│   │   ├── middleware/      # Express middleware
+│   │   └── utils/           # Utility functions
+├── crowdfunding-app/        # Crowdfunding platform
+├── contracts/               # Smart contracts
+├── docs/                    # Documentation
+└── scripts/                 # Deployment scripts
+```
+
+## 🔧 Configuration
+
+### Environment Variables
+
+Key environment variables to configure:
+
+- `MONGODB_URI`: MongoDB connection string
+- `DATABASE_URL`: PostgreSQL connection string
+- `REDIS_URL`: Redis connection string
+- `JWT_SECRET`: Secret for JWT tokens
+- `COINBASE_APP_ID`: Coinbase application ID
+- `STRIPE_SECRET_KEY`: Stripe secret key
+- `OPENAI_API_KEY`: OpenAI API key
+
+See `.env.example` for complete list.
+
+### Database Setup
+
+1. **MongoDB**: Document storage for flexible data
+2. **PostgreSQL**: Relational data with ACID compliance
+3. **Redis**: Caching and session management
+
+### Blockchain Configuration
+
+1. Deploy smart contracts to Base network
+2. Configure Coinbase AgentKit integration
+3. Set up wallet connections
+
+## 🧪 Testing
+
+```bash
+# Run all tests
+npm run test
+
+# Run frontend tests
+cd frontend && npm test
+
+# Run backend tests
+cd backend && npm test
+
+# Run integration tests
+npm run test:integration
+```
+
+## 🚀 Deployment
+
+### Replit Deployment
+
+This project is optimized for Replit deployment:
+
+1. Import repository to Replit
+2. Configure environment variables in Secrets
+3. Run setup command
+4. Deploy using Replit's deployment feature
+
+### Production Deployment
+
+1. **Build applications**
+```bash
+npm run build
+```
+
+2. **Deploy backend**
+```bash
+cd backend && npm start
+```
+
+3. **Deploy frontend**
+```bash
+cd frontend && npm start
+```
+
+4. **Deploy smart contracts**
+```bash
+npm run deploy-contracts
+```
+
+## 📊 Monitoring
+
+- Health checks: `/health`
+- Metrics: Prometheus integration
+- Logging: Winston with structured logs
+- Error tracking: Comprehensive error handling
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🌍 Vision
+
+FastBite Pro represents the future of ethical technology - where innovation serves humanity, workers are treated with dignity, and transparency builds trust. Join us in revolutionizing the food delivery industry.
+
+## 📞 Support
+
+- Documentation: See `/docs` folder
+- Issues: GitHub Issues
+- Community: Join our Discord
+- Email: support@fastbitepro.com
+
+---
+
+Built with ❤️ by the FastBite Pro team
